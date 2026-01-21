@@ -22,11 +22,19 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('sending');
-
+    
     // TODO: Replace with your Formspree form ID
     // Sign up at https://formspree.io and create a form
     const FORMSPREE_ID = 'YOUR_FORMSPREE_ID';
+    
+    // Check if Formspree is configured
+    if (FORMSPREE_ID === 'YOUR_FORMSPREE_ID') {
+      setStatus('error');
+      alert('Please configure Formspree by replacing YOUR_FORMSPREE_ID in Contact.jsx with your actual form ID. See README.md for instructions.');
+      return;
+    }
+    
+    setStatus('sending');
     
     try {
       const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
