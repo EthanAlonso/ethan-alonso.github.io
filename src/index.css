@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #1e40af;
+  --color-dark: #0f172a;
+  --color-dark-secondary: #1e293b;
+  --color-dark-tertiary: #334155;
+  
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: rgb(243 244 246);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@utility text-gradient {
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility shadow-glow {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+}
+
+@utility shadow-glow-hover {
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+}
