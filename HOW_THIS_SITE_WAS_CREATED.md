@@ -160,8 +160,9 @@ npm install tailwindcss framer-motion
 ```
 
 #### Step 4: Configure Tailwind CSS
-- Created configuration files: `tailwind.config.js` and `postcss.config.js`
-- These tell Tailwind how to work with our project
+- Created `postcss.config.js` for PostCSS integration
+- Configured Tailwind v4 directly in `src/index.css` using the `@theme` directive
+- This is the new CSS-based configuration approach in Tailwind CSS v4
 
 ### Phase 2: Building the Components
 
