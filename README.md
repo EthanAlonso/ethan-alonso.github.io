@@ -4,6 +4,22 @@ Modern, bold portfolio website showcasing soccer data analytics projects. Built 
 
 🔗 **Live Site:** [https://ethanalonso.github.io](https://ethanalonso.github.io)
 
+---
+
+## 📖 New to Coding?
+
+**→ [Read the Beginner's Guide: How This Site Was Created](./HOW_THIS_SITE_WAS_CREATED.md)**
+
+This comprehensive guide explains:
+- What technologies are used and why (in simple terms)
+- How everything works together
+- Important things to watch out for
+- Best practices and tips for maintaining the site
+- Common mistakes to avoid
+- Where to get help
+
+Perfect for those with little coding knowledge!
+
 ## 🚀 Features
 
 - **Bold & Creative Design** - Modern blue color scheme with smooth animations
